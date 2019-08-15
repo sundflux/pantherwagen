@@ -1,0 +1,25 @@
+# Ignore project files that should not be in version control
+drush/contrib/
+drush/sites/
+files
+files_private
+node_modules
+public/core
+public/modules/contrib
+public/themes/contrib
+public/profiles/config_installer
+public/profiles/contrib
+public/libraries
+public/sites/default/files
+tools/init-tools-status
+vendor
+
+# Ignore the folder created by PhpStorm
+.idea/*
+
+# Ignore OSX generated files
+.DS_Store
+._*
+
+!*.gitkeep
+!*.keepme
