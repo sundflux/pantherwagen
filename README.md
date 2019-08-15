@@ -1,12 +1,12 @@
-# Your Drupal 8 project
+# PANTHERWAGEN!
 
-Description of your project.
+Drupal 8 test project to test PANTHER: https://github.com/symfony/panther
 
 ## Environments
 
 Env | Branch | Drush alias | URL
 --- | ------ | ----------- | ---
-development | * | - | http://yoursite.fi.docker.amazee.io/
+development | * | - | http://pantherwagen.fi.docker.amazee.io/
 production | master | @master | TBD
 
 ## Requirements
@@ -17,28 +17,23 @@ You need to have these applications installed to operate on all environments:
 - [Pygmy](https://github.com/druidfi/guidelines/blob/master/docs/pygmy.md)
 - For the new person: Your SSH public key needs to be added to servers
 
-## Setup a new local environment
-
-By default we'll use Docker based environment.
-
-- Change the hostname in `docker-compose.yml` file:
-  E.g. `mysite.fi.docker.amazee.io` to `yoursite.fi.docker.amazee.io`
-
-## Create and start the environment
+## Create and start the environment aka HOW TO TEST
 
 For the first time (new project):
 
 ```
 $ make new
 ```
+You will get login/password reset link from this command.
 
-And following times to create and start the environment:
+Then, generate some dummy articles:
 
 ```
-$ make build-dev
-```
+$ make shell
+$ cd ~/public_html/
+$ drush dummycontent:generate
 
-Change these according of the state of your project.
+```
 
 ## Login to Drupal container
 

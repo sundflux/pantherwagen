@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
 namespace Drupal\dummycontent\Commands;
 
@@ -9,24 +9,24 @@ use Drupal\Core\Entity\EntityTypeManagerInterface;
 use GuzzleHttp\ClientInterface;
 
 /**
- * Class DummySeeder
+ * Class DummySeeder.
  *
  * @package Drupal\dummycontent\Commands
  */
 class DummySeeder extends DrushCommands {
 
   /**
-   * Dummy posts amount
+   * Dummy posts amount.
    */
   const CREATE_AMOUNT = 10;
 
   /**
-   * Owner account
+   * Owner account.
    */
   const OWNER_ACCOUNT_ID = 1;
 
   /**
-   * Baconipsum random content amount
+   * Baconipsum random content amount.
    */
   const BACON_COUNT = 5;
 
@@ -158,7 +158,7 @@ class DummySeeder extends DrushCommands {
   }
 
   /**
-   * Generate dummy articles
+   * Generate dummy articles.
    *
    * @command dummycontent:generate
    *
