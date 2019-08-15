@@ -83,6 +83,10 @@
         "test": [
             "phpunit -c phpunit.xml.dist --testsuite unit"
         ],
-        "test-unit": "@test"
+        "panther": [
+            "phpunit -c phpunit.xml.dist --testsuite panther"
+        ],
+        "test-unit": "@test",
+        "test-panther": "@panther"
     }
 }
