@@ -33,6 +33,7 @@
         "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
         "druidfi/amazeeio-scripts": "^1.1.4",
         "drupal/coder": "^8.3.1",
+        "symfony/panther": "^0.4.1",
         "webflo/drupal-core-require-dev": "^8.7.0"
     },
     "conflict": {
