@@ -1,13 +1,13 @@
 {
-    "name": "druidfi/spell",
-    "description": "Spell to create a new Drupal 8 project",
+    "name": "sundflux/pantherwagen",
+    "description": "Drupal 8 / Panther test project",
     "type": "project",
     "license": "MIT",
-    "homepage": "https://github.com/druidfi/spell",
+    "homepage": "https://github.com/sundflux/pantherwagen",
     "authors": [
         {
-            "name": "Druid.fi",
-            "email": "info@druid.fi"
+            "name": "Tarmo Sundström",
+            "email": "tarmo.sundstrom@druid.fi"
         }
     ],
     "minimum-stability": "dev",
@@ -18,7 +18,8 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/core": "^8.7.0",
         "drush/drush": "^9.0.0",
-        "zaporylie/composer-drupal-optimizations": "^1.0"
+        "zaporylie/composer-drupal-optimizations": "^1.0",
+        "drupal/druid_seeder": "dev-8.x-1.x#8.x-1.0-beta1"
     },
     "require-dev": {
         "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
@@ -51,6 +52,10 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "github",
+            "url": "git@github.com:druidfi/druid_seeder.git"
         }
     ],
     "scripts": {

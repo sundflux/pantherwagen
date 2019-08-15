@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f4a9ee63bc7a45007cea4029c8ff4ddd",
+    "content-hash": "a60c3dc618b333138f5b8d9529945898",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2170,6 +2170,38 @@
             "time": "2019-08-07T19:19:20+00:00"
         },
         {
+            "name": "drupal/druid_seeder",
+            "version": "dev-8.x-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/druidfi/druid_seeder.git",
+                "reference": "57ccfca7d34a1fde387c6e3fa08788ab43adb89e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/druidfi/druid_seeder/zipball/57ccfca7d34a1fde387c6e3fa08788ab43adb89e",
+                "reference": "57ccfca7d34a1fde387c6e3fa08788ab43adb89e",
+                "shasum": ""
+            },
+            "require": {
+                "fzaninotto/faker": "^1.7"
+            },
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Custom content seeder",
+            "homepage": "https://www.drupal.org/project/druid_seeder",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "https://www.drupal.org/project/issues/druid_seeder",
+                "source": "http://cgit.drupalcode.org/druid_seeder"
+            },
+            "time": "2018-03-20T08:52:02+00:00"
+        },
+        {
             "name": "drush/drush",
             "version": "9.7.1",
             "source": {
@@ -2437,6 +2469,56 @@
                 "validator"
             ],
             "time": "2019-08-13T17:33:27+00:00"
+        },
+        {
+            "name": "fzaninotto/faker",
+            "version": "v1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fzaninotto/Faker.git",
+                "reference": "f72816b43e74063c8b10357394b6bba8cb1c10de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/f72816b43e74063c8b10357394b6bba8cb1c10de",
+                "reference": "f72816b43e74063c8b10357394b6bba8cb1c10de",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3.3 || ^7.0"
+            },
+            "require-dev": {
+                "ext-intl": "*",
+                "phpunit/phpunit": "^4.8.35 || ^5.7",
+                "squizlabs/php_codesniffer": "^1.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Faker\\": "src/Faker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Zaninotto"
+                }
+            ],
+            "description": "Faker is a PHP library that generates fake data for you.",
+            "keywords": [
+                "data",
+                "faker",
+                "fixtures"
+            ],
+            "time": "2018-07-12T10:23:15+00:00"
         },
         {
             "name": "grasmash/expander",
@@ -7982,9 +8064,14 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/druid_seeder": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "platform-overrides": {
+        "php": "7.2"
+    }
 }
