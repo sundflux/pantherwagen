@@ -35,6 +35,23 @@ $ drush dummycontent:generate
 
 ```
 
+Test Panther (local, not inside container):
+
+```
+php panther_quicktest.php
+```
+
+This clicks title link and takes `screen.png` capture to confirm that Panther is working.
+
+Run functional tests with Panther (local, not inside container):
+
+```
+make test-panther
+```
+
+Tests are located in `E2E` directory, and defined in `phpunit.xml.dist`
+
+
 ## Login to Drupal container
 
 This will log you inside the Drupal Docker container and in the `public` folder:
