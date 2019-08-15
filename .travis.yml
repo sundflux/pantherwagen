@@ -5,8 +5,16 @@ cache:
   directories:
     - $HOME/docker
 
-before_install:
+language: php
 
+addons:
+  chrome: stable
+
+php:
+  - 7.1
+  - 7.2
+
+before_install:
   - rvm install 2.4
 
 install:
@@ -29,3 +37,4 @@ script:
 
   # Run tests
   - make test
+  - make test-panther
