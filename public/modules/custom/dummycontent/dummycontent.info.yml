@@ -1,0 +1,5 @@
+name: 'dummycontent'
+type: module
+description: 'Dummy article seeder'
+core: 8.x
+package: 'Custom'

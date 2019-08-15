@@ -1,0 +1,6 @@
+services:
+  dummyseeder.commands:
+    class: \Drupal\dummycontent\Commands\DummySeeder
+    arguments: ['@entity_type.manager', '@http_client']
+    tags:
+      - { name: drush.command }
