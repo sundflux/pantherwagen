@@ -32,6 +32,7 @@ Then, generate some dummy articles:
 $ make shell
 $ cd ~/public_html/
 $ drush dummycontent:generate
+$ exit
 
 ```
 
